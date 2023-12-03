@@ -1,0 +1,28 @@
+﻿<Page x:Class="Desktop.Doctor"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Desktop"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Doctor">
+
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="14*"/>
+            <RowDefinition Height="11*"/>
+        </Grid.RowDefinitions>
+        <Label Content="ID :" HorizontalAlignment="Left" Margin="230,45,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <TextBox Style="{StaticResource textbox}" x:Name="id_txt" HorizontalAlignment="Left" Margin="300,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" />
+        <Label Content="Room Number :" HorizontalAlignment="Left" Margin="178,95,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <TextBox Style="{StaticResource textbox}" x:Name="Room_txt" HorizontalAlignment="Left" Margin="351,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" />
+        <Button Style="{StaticResource ButtonStyle}" Content="Refresh " HorizontalAlignment="Left" Margin="10,34,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Background="#FFDCCECE"  Click="Button_Click"/>
+        <Button Style="{StaticResource ButtonStyle}" Content="Update" HorizontalAlignment="Left" Margin="635,64,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Background="#FFCCB6B6"  Click="Button_Click_1"/>
+        <Button Style="{StaticResource ButtonStyle}" Content="Delete" HorizontalAlignment="Left" Margin="10,108,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Background="#FFDACBCB"  Click="Button_Click_2"/>
+        <Button Style="{StaticResource ButtonStyle}" Content="Searsh" HorizontalAlignment="Left" Margin="384,192,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Background="#FFCEC0C0"  Click="Button_Click_3"/>
+        <TextBox x:Name="Searsh_txt" HorizontalAlignment="Left" Margin="300,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="319" Height="38"/>
+        <DataGrid Name="Dg_name" Grid.Row="1" />
+
+    </Grid>
+</Page>
